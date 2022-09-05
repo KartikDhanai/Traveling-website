@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+ <style> 
+h1,h2{
+    background-color: yellow;
+    color: red;
+}
+body{
+    background-color:slategray;
+}
+p{
+    color: yellow;
+}
+</style>   
+</head>
+
+<body>
+    <H1> PAYMENT FORM</H1>
+    <H2> Contact Information</H2>
+    <p> *Required Fields </p>
+    <form action="/action_page.php" method="get">
+    <p>Name:* <input type="text" placeholder="Enter your name" required> </p>
+    <fieldset>
+        <legend>Gender*</legend>
+        <p> Male <input type="radio" id="male" name="gender" required> Female <input type="radio" id="female"
+                name="gender" required> </p>
+    </fieldset>
+    <p>Address <textarea name="address" id="address" cols="90" rows="7 "
+            placeholder="Kindly Enter your address here"></textarea></p>
+    <p> Email :* <input type="email" placeholder="Enter your Email address" id="email" name="email" required> </p>
+    <p> Pincode :* <input type="number" id="pincode" name="pincode" required> </p>
+    <hr>
+    <H2>Payment Information</H2>
+    <p>Card Type:* <select>
+            <option>--Select Card Type--</option>
+            <option>Visa </option>
+            <option>Credit card</option>
+            <option>Rupaay</option>
+            <option>Debit card</option>
+            <option>Multi Visa Card</option>
+        </select></p>
+    <p> Card Number:* <input type="number" placeholder="Enter Only Valid Card number " id="card_no" name="card_no" required> </p>
+    <p> Expiry Date :* <input type="date" id="exp_date" name="exp_date" required> </p>
+    <p>CVV :* <input type="password " name="cvv" id="cvv" placeholder="3-digit number on back side of the card " required></p>
+    <input type="submit" value="PAY NOW ">
+    <p> password :* <input type="password" id="password" placeholder="enter password" name="password" required>
+    </p>
+    <hr>
+    <h2> TOURISM Place</h2>
+    <p>Select place:* <select> 
+        <option>--Select Place--</option>
+        <option>Taj Mahal</option>
+        <option>Elora Caves</option>
+        <option> ANGKOR WAT </option>
+        <option> THE GREAT PYRAMID OF GIZA: EGYPT</option>
+        <option>THE GREAT WALL OF CHINA</option>
+        
+
+    </select></p>
+    <p>Date :* <input type="date" placeholder="Enter date of trip" id="date" name="date" required></p>
+    <p> Number of days :* <input type="number" id="days" name="days" placeholder="Enter no. of days you want to travel"></p>
+<h2> Thanks for your Interest and have a nice day !!!</h2>
+</form>
+</body>
+
+</html>
